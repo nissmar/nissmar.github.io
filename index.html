@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nissim Maruani</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+	<style>
+       
+        body {
+            padding: 30px;
+            font-family: 'Roboto Mono', monospace;
+            font-weight: 100;
+        }
+
+        h1{ /* title */
+            margin: 0px; 
+        }
+
+        .contact { /* email */
+            padding: 0px;
+            margin: 0px;
+            font-weight: 500;
+            color:orange;
+        }
+		.container {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+		}
+
+		.profile-img {
+			width: 150px;
+			border-radius: 10%;
+			object-fit: cover;
+			margin-right: 20px;
+		}
+
+		.bio {
+			font-style: italic;
+			margin-bottom: 20px;
+		}
+
+		.pub-img {
+			height: 150px;
+			border-radius: 0px;
+			object-fit: cover;
+			margin-right: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<img class="profile-img" src="img/profile.jpeg" alt="Profile Picture">
+		<div>
+			<h1>Nissim Maruani</h1>
+			<p class="contact">nissim.maruani at inria.fr</p>
+            <div class="bio">
+                <p>I'm a PhD student at INRIA, under the supervision of Pierre Alliez (Titane team) in Mathieu Desbrun (Geomerix team). My research topic is at the interface between geometry processing and deep learning. </p>
+            </div>
+		</div>
+
+        
+        
+	</div>
+	
+	<h2>Publications:</h2>
+	<ul>
+        <div>
+            <img class="pub-img" src="img/offset.jpg" alt="Publication 1 Image">
+			<a href="#">Publication 1 Title</a>
+        </div>
+
+	</ul>
+</body>
+</html>

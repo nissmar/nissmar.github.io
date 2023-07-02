@@ -98,10 +98,17 @@ li {
     border-style:solid;
 }
 @media only screen and (max-width: 768px) {
+    body {
+        padding: 20px 10px;
+    }
     h1, h2{ /* title */
         font-size: 30px;
     }
 
+    ul {
+        padding-left: 20px;
+        padding-right: 10px;
+    }
     .bio { /*bio */
         /* font-style: italic; */
         text-align: justify;
@@ -120,5 +127,13 @@ li {
     .pub-title, .pub-authors {
         font-size: 15px;
     }
-   
+
+    .pub-abstract {
+        margin: 10px 0px;
+        }
+    .pub-img {
+        width:100%;
+        height: auto;
+       
+    }
 }

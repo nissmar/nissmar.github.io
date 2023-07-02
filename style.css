@@ -31,7 +31,6 @@ li {
     display: flex;
     flex-direction: row;
     align-items: start;
-
 }
 
 .bio { /*bio */
@@ -97,6 +96,26 @@ li {
     color:var(--gray-color);
     border-style:solid;
 }
+
+.project {
+    flex-wrap: wrap;
+}
+
+.code-project {
+    padding: 10px;
+    max-width: 250px;
+    min-width: 100px;
+    flex: 1 1 auto;
+}
+
+.code-title {
+    text-align: center;
+}
+
+.code-img {
+    max-width: 100%;   
+}
+
 @media only screen and (max-width: 768px) {
     body {
         padding: 20px 10px;
@@ -136,4 +155,13 @@ li {
         height: auto;
        
     }
+    .code-img {
+        width:100%;
+        height: auto;
+    }
+
+    .code-project {
+        padding: 0px;
+    }
+    
 }

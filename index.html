@@ -2,54 +2,120 @@
 <html>
 <head>
 	<title>Nissim Maruani</title>
+	<link rel="icon" href="img/favicon.png">
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
-
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&family=Space+Mono:ital@1&display=swap" rel="stylesheet">
 	<style>
        
+
         body {
-            padding: 30px;
+			--main-color:rgb(72, 87, 97);
+			--link-color: rgb(94, 160, 207);
+			--link-hover: rgb(171, 204, 228);
+			--gray-color:rgb(208, 208, 208);
+            padding: 40px 80px;
             font-family: 'Roboto Mono', monospace;
             font-weight: 100;
+			
         }
 
-        h1{ /* title */
-            margin: 0px; 
+        h1, h2{ /* title */
+			color: var(--main-color);
+            margin: 10px 0px; 
+			font-family: 'Helvetica', monospace;
+			font-size: 50px;
         }
+
+		h2{ /* title publications*/
+			font-size: 30px;
+			margin: 40px 0px;
+		}
+
+		/* ul {
+			padding: 20px 40px 30px;
+		} */
+
+		li {
+			list-style: square;
+			margin-bottom: 20px; 
+		}
+		.container {
+			display: flex;
+			flex-direction: row;
+			align-items: start;
+
+		}
+
+		.bio { /*bio */
+			/* font-style: italic; */
+			margin-top: 30px;
+		}
+		.custom-link {
+			color: var(--link-color);
+			font-weight: 500;
+		}
+		.custom-link:hover {
+			color: var(--link-hover);
+		}
 
         .contact { /* email */
             padding: 0px;
             margin: 0px;
-            font-weight: 500;
-            color:orange;
+			font-size: 20px;
         }
-		.container {
-			display: flex;
-			flex-direction: row;
-			align-items: center;
-		}
+		
 
 		.profile-img {
 			width: 150px;
-			border-radius: 10%;
+			border-radius: 5%;
 			object-fit: cover;
-			margin-right: 20px;
+			margin-right: 40px;
+			margin-top: 18px;		
 		}
 
-		.bio {
-			font-style: italic;
-			margin-bottom: 20px;
+		.pub {
+			padding-left: 0px;
 		}
-
 		.pub-img {
-			height: 150px;
+			height: 250px;
 			border-radius: 0px;
 			object-fit: cover;
 			margin-right: 10px;
+			margin-left: 0px;
+		}
+		.pub-title {
+			font-size: 20px;
+			font-weight: 500;
+			color:var(--link-color);
+			text-decoration-line: none;
+		}
+		.pub-title:hover {
+			color: var(--link-hover);
+		}
+		.pub-abstract {
+			text-align: justify;
+			font-size: 14px;
+			margin: 10px 40px 10px 0px;
+			/* margin-right: 40px; */
+			font-style: italic;
+		}
+
+		.pub-conf {
+			text-align: justify;
+			/* margin-right: 40px; */
+		}
+		
+		.pub-line {
+			border-top: 1px;
+			color:var(--gray-color);
+			border-style:solid;
 		}
 	</style>
 </head>
@@ -58,23 +124,38 @@
 		<img class="profile-img" src="img/profile.jpeg" alt="Profile Picture">
 		<div>
 			<h1>Nissim Maruani</h1>
-			<p class="contact">nissim.maruani at inria.fr</p>
+			<p class="contact"> <a class="custom-link" href="mailto:nissim.maruani@inria.fr">Contact</a> | <a class="custom-link" href="https://www.github.com/nissmar"> GitHub</a>  | <a class="custom-link" href="https://www.linkedin.com/in/nissim-maruani/"> LinkedIn</a> </p>
             <div class="bio">
-                <p>I'm a PhD student at INRIA, under the supervision of Pierre Alliez (Titane team) in Mathieu Desbrun (Geomerix team). My research topic is at the interface between geometry processing and deep learning. </p>
+                <p>I am a first year PhD student at INRIA, under the supervision of Pierre Alliez (<a class="custom-link" href="https://www.inria.fr/fr/titane">Titane team</a>) and Mathieu Desbrun (<a class="custom-link"  href="https://www.inria.fr/fr/geomerix">Geomerix team</a>). My research topic is at the interface of geometry processing and deep learning: our goal is to enable neural networks to generate 3D shapes in a differentiable pipeline. </p>
             </div>
 		</div>
-
-        
-        
+		
 	</div>
-	
-	<h2>Publications:</h2>
+
+	<h2>Education</h2>
 	<ul>
-        <div>
+		<li> ENS Paris-Saclay (2021-2022, Gif-sur-Yvette, France): Master MVA</li>
+		<li> École polytechnique (2018-2022, Saclay, France): Engineering Curriculum </li>
+	</ul>
+
+	
+	<h2>Publications</h2>
+	<ul class="pub">
+
+        <div class="container">
             <img class="pub-img" src="img/offset.jpg" alt="Publication 1 Image">
-			<a href="#">Publication 1 Title</a>
+			<div>
+				<a class="pub-title" href="#"> Feature-Preserving Offset Mesh Generation from Topology-Adapted Octrees</a>
+				<div class="pub-authors">Daniel Zint, Nissim Maruani, Mael Rouxel-Labbé, Pierre Alliez</div> 
+
+				<div class="pub-abstract">We introduce a reliable method to generate offset meshes from input triangle meshes or triangle soups. Our method proceeds in two steps. The first step performs a Dual Contouring method on the offset surface, operating on an adaptive octree that is refined in areas where the offset topology is complex. Our approach substantially reduces memory consumption and runtime compared to isosurfacing methods operating on uniform grids. The second step improves the output Dual Contouring mesh with an offset-aware remeshing algorithm to reduce the normal deviation between the mesh facets and the exact offset. This remeshing process reconstructs concave sharp features and approximates smooth shapes in convex areas up to a user-defined precision. We show the effectiveness and versatility of our method by applying it to a wide range of input meshes. We also benchmark our method on the entire Thingi10k dataset: watertight, 2-manifold offset meshes are obtained for 100% of the cases.</div>
+				<div class="pub-conf">Symposium on geometry processing (SGP), 2023</div>
+
+			</div>
         </div>
 
 	</ul>
+
+
 </body>
 </html>

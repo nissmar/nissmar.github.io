@@ -35,6 +35,7 @@ li {
 
 .bio { /*bio */
     /* font-style: italic; */
+    text-align: justify;
     margin-top: 30px;
 }
 .custom-link {
@@ -62,6 +63,8 @@ li {
 
 .pub {
     padding-left: 0px;
+    padding-right: 0px;
+
 }
 .pub-img {
     height: 250px;
@@ -88,6 +91,7 @@ li {
 }
 .pub-conf {
     text-align: justify;
+    font-weight: 400;
     /* margin-right: 40px; */
 }
 

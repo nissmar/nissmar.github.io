@@ -30,7 +30,7 @@ li {
 .container {
     display: flex;
     flex-direction: row;
-    align-items: start;
+    align-items: center;
 }
 
 .bio { /*bio */
@@ -58,13 +58,12 @@ li {
     border-radius: 5%;
     object-fit: cover;
     margin-right: 40px;
-    margin-top: 18px;		
+    margin-top: 18px;	
+    text-decoration-line:overline;	
 }
 
 .pub {
-    padding-left: 0px;
-    padding-right: 0px;
-
+    padding: 10px 0px;
 }
 .pub-img {
     height: 250px;
@@ -96,9 +95,11 @@ li {
 }
 
 .pub-line {
-    border-top: 1px;
+    margin: 10px 40px 10px 0px;
+    /* border-top: 1px; */
     color:var(--gray-color);
-    border-style:solid;
+    border-style: dashed;
+    border-width: 2px;
 }
 
 .project {

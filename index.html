@@ -22,17 +22,45 @@
 			<h1>Nissim Maruani</h1>
 			<p class="contact"> <a class="custom-link" href="mailto:nissim.maruani@inria.fr">Contact</a> | <a class="custom-link" href="https://www.github.com/nissmar"> GitHub</a>  | <a class="custom-link" href="https://www.linkedin.com/in/nissim-maruani/"> LinkedIn</a> </p>
             <div class="bio">				
-                <p>I am a first year PhD student at INRIA, under the supervision of <a class="custom-link" href="https://team.inria.fr/titane/pierre-alliez/">Pierre Alliez</a> (<a class="custom-link" href="https://www.inria.fr/fr/titane">Titane team</a>) and <a class="custom-link"  href="https://pages.saclay.inria.fr/mathieu.desbrun/">Mathieu Desbrun</a> (<a class="custom-link"  href="https://www.inria.fr/fr/geomerix">Geomerix team</a>). My research topic is at the interface of geometry processing and deep learning: our goal is to enable neural networks to generate 3D shapes in a differentiable pipeline. </p>
+                <p>I am a first year PhD student at INRIA, under the supervision of <a class="custom-link" href="https://team.inria.fr/titane/pierre-alliez/">Pierre Alliez</a> (<a class="custom-link" href="https://www.inria.fr/fr/titane">Titane team</a>) and <a class="custom-link"  href="https://pages.saclay.inria.fr/mathieu.desbrun/">Mathieu Desbrun</a> (<a class="custom-link"  href="https://www.inria.fr/fr/geomerix">Geomerix team</a>). My research topic combines geometry processing with deep learning. Our goal is to enable neural networks to generate efficient 3D shapes in a differentiable pipeline.  </p>
             </div>
 		</div>
 	</div>
 
 
 	<h2>Publications</h2>
+
+	<!-- <ul class="pub-line"></ul> -->
+	<!-- <ul class="pub-line"></ul> -->
+
 	<ul class="pub">
 
         <div class="container">
+			<a href="https://nissmar.github.io/voromesh.github.io/">
+            <img class="pub-img" src="img/Voromesh.png" alt="Publication 1 Image">
+			</a>
+			<div>
+				<a class="pub-title" href="https://nissmar.github.io/voromesh.github.io/"> VoroMesh: Learning Watertight Surface Meshes with Voronoi Diagrams</a>
+				<div class="pub-authors"> Nissim Maruani, Roman Klokov, Maks Ovsjanikov, Pierre Alliez, Mathieu Desbrun </div> 
+
+				<div class="pub-abstract">
+					In stark contrast to the case of images, finding a concise, learnable discrete representation of 3D surfaces remains a challenge. In particular, while polygon meshes are arguably the most common surface representation used in geometry processing, their irregular and combinatorial structure often make them unsuitable for learning-based applications. In this work, we present VoroMesh, a novel and differentiable Voronoi-based representation of water- tight 3D shape surfaces. From a set of 3D points (called generators) and their associated occupancy, we define our boundary representation through the Voronoi diagram of the generators as the subset of Voronoi faces whose two associated (equidistant) generators are of opposite occupancy: the resulting polygon mesh forms a watertight approximation of the target shape’s boundary. To learn the position of the generators, we propose a novel loss function, dubbed VoroLoss, that minimizes the distance from groundtruth surface samples to the closest faces of the Voronoi diagram which does not require an explicit construction of the entire Voronoi diagram. A direct optimization of the Voroloss to obtain generators on the Thingi32 dataset demonstrates the geometric efficiency of our representation compared to axiomatic meshing algorithms and recent learning-based mesh representations. We further use VoroMesh in a learning-based mesh prediction task from input SDF grids on the ABC dataset, and show comparable performance to state-of-the-art methods while guaranteeing closed output surfaces free of self-intersections.
+				</div>
+				<div class="pub-conf"> International Conference on Computer Vision (ICCV), 2023</div>
+
+			</div>
+        </div>
+
+	</ul>
+
+	<ul class="pub-line"></ul>
+
+	<ul class="pub">
+
+        <div class="container">
+			<a href="https://inria.hal.science/hal-04135266#">
             <img class="pub-img" src="img/offset.jpg" alt="Publication 1 Image">
+			</a>
 			<div>
 				<a class="pub-title" href="https://inria.hal.science/hal-04135266#"> Feature-Preserving Offset Mesh Generation from Topology-Adapted Octrees</a>
 				<div class="pub-authors">Daniel Zint, Nissim Maruani, Mael Rouxel-Labbé, Pierre Alliez</div> 
@@ -41,13 +69,14 @@
 				<div class="pub-conf">Symposium on geometry processing (SGP), 2023</div>
 
 			</div>
+		
         </div>
-
 	</ul>
+	<!-- <ul class="pub-line"></ul> -->
 
 	<h2>Teaching</h2>
 	<ul>
-		<li> ENS-PSL (2022-Today, Paris, France): exploring new ways to teach math with <a class="custom-link"  href="https://mathadata.fr/index.html">MathAData</a>  </li>
+		<li> ENS-PSL (2022-Today, Paris, France): exploring new ways of teaching maths with <a class="custom-link"  href="https://mathadata.fr/index.html">MathAData</a>  </li>
 		<li> 
 			<a class="custom-link"  href="https://www.larotonde-sciences.com">La Rotonde</a> (2018-2019, Saint-Étienne, France): Science Mediation at  <a class="custom-link"  href="https://fondation-lamap.org/en">La main à la pâte</a></li>
 	</ul>

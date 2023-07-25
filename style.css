@@ -65,13 +65,25 @@ li {
 .pub {
     padding: 10px 0px;
 }
+
 .pub-img {
+    transition: transform .1s;
     height: 250px;
     border-radius: 0px;
     object-fit: cover;
-    margin-right: 10px;
+    margin-right: 0px;
     margin-left: 0px;
 }
+.zoomhover {
+    margin-right: 10px;
+}
+.zoomhover:hover .pub-img, .zoomhover:hover .code-img {
+    /* height: 50px; */
+    /* transition: transform .1s; */
+    filter: brightness(105%);
+    transform: scale(1.05);
+  }
+
 .pub-title {
     font-size: 20px;
     font-weight: 500;
@@ -118,6 +130,7 @@ li {
 }
 
 .code-img {
+    transition: transform .1s;
     max-width: 100%;   
 }
 

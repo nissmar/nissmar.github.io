@@ -27,6 +27,11 @@ li {
     list-style: square;
     margin-bottom: 20px; 
 }
+
+b {
+    font-weight: 400;
+}
+
 .container {
     display: flex;
     flex-direction: row;

@@ -23,7 +23,7 @@
 			<h1>Nissim Maruani</h1>
 			<p class="contact"> <a class="custom-link" href="mailto:nissim.maruani@inria.fr">Contact</a> | <a class="custom-link" href="https://www.github.com/nissmar"> GitHub</a>  | <a class="custom-link" href="https://www.linkedin.com/in/nissim-maruani/"> LinkedIn</a> </p>
             <div class="bio">				
-                <p>I am a first year PhD student at INRIA, under the supervision of <a class="custom-link" href="https://team.inria.fr/titane/pierre-alliez/">Pierre Alliez</a> (<a class="custom-link" href="https://www.inria.fr/fr/titane">Titane team</a>) and <a class="custom-link"  href="https://pages.saclay.inria.fr/mathieu.desbrun/">Mathieu Desbrun</a> (<a class="custom-link"  href="https://www.inria.fr/fr/geomerix">Geomerix team</a>). My research topic combines geometry processing with deep learning. Our goal is to enable neural networks to generate efficient 3D shapes in a differentiable pipeline.  </p>
+                <p>I am a second year PhD student at INRIA, under the supervision of <a class="custom-link" href="https://team.inria.fr/titane/pierre-alliez/">Pierre Alliez</a> (<a class="custom-link" href="https://www.inria.fr/fr/titane">Titane team</a>) and <a class="custom-link"  href="https://pages.saclay.inria.fr/mathieu.desbrun/">Mathieu Desbrun</a> (<a class="custom-link"  href="https://www.inria.fr/fr/geomerix">Geomerix team</a>). My research topic combines geometry processing with deep learning. Our goal is to enable neural networks to generate efficient 3D shapes in a differentiable pipeline.  </p>
             </div>
 		</div>
 	</div>
@@ -33,6 +33,26 @@
 
 	<!-- <ul class="pub-line"></ul> -->
 	<!-- <ul class="pub-line"></ul> -->
+	<ul class="pub">
+        <div class="container">
+			<div class="zoomhover">
+				<a href="https://nissmar.github.io/projects/ponq">
+				<img class="pub-img" src="img/PoNQ.png" alt="Publication 1 Image">	
+				</a>
+			</div>
+			<div>
+				<a class="pub-title" href="https://nissmar.github.io/projects/ponq"> PoNQ: a Neural QEM-based Mesh Representation</a>
+				<div class="pub-authors"> <b>Nissim Maruani</b>, Maks Ovsjanikov, Pierre Alliez, Mathieu Desbrun </div> 
+
+				<div class="pub-abstract">
+					Although polygon meshes have been a standard representation in geometry processing, their irregular and combinatorial nature hinders their suitability for learning-based applications. In this work, we introduce a novel learnable mesh representation through a set of local 3D sample Points and their associated Normals and Quadric error metrics (QEM) w.r.t. the underlying shape, which we denote PoNQ. A global mesh is directly derived from PoNQ by efficiently leveraging the knowledge of the local quadric errors. Besides marking the first use of QEM within a neural shape representation, our contribution guarantees both topological and geometrical properties by ensuring that a PoNQ mesh does not self-intersect and is always the boundary of a volume. Notably, our representation does not rely on a regular grid, is supervised directly by the target surface alone, and also handles open surfaces with boundaries and/or sharp features. We demonstrate the efficacy of PoNQ through a learning-based mesh prediction from SDF grids and show that our method surpasses recent state-of-the-art techniques in terms of both surface and edge-based metrics.
+</div>
+				<div class="pub-conf"> Proc. Conference on Computer Vision and Patter Recognition (CVPR), 2024</div>
+			</div>
+        </div>
+	</ul>
+
+	<ul class="pub-line"></ul>
 
 	<ul class="pub">
 
@@ -44,12 +64,12 @@
 			</div>
 			<div>
 				<a class="pub-title" href="https://nissmar.github.io/voromesh.github.io/"> VoroMesh: Learning Watertight Surface Meshes with Voronoi Diagrams</a>
-				<div class="pub-authors"> Nissim Maruani, Roman Klokov, Maks Ovsjanikov, Pierre Alliez, Mathieu Desbrun </div> 
+				<div class="pub-authors"> <b>Nissim Maruani</b>, Roman Klokov, Maks Ovsjanikov, Pierre Alliez, Mathieu Desbrun </div> 
 
 				<div class="pub-abstract">
 					In stark contrast to the case of images, finding a concise, learnable discrete representation of 3D surfaces remains a challenge. In particular, while polygon meshes are arguably the most common surface representation used in geometry processing, their irregular and combinatorial structure often make them unsuitable for learning-based applications. In this work, we present VoroMesh, a novel and differentiable Voronoi-based representation of water- tight 3D shape surfaces. From a set of 3D points (called generators) and their associated occupancy, we define our boundary representation through the Voronoi diagram of the generators as the subset of Voronoi faces whose two associated (equidistant) generators are of opposite occupancy: the resulting polygon mesh forms a watertight approximation of the target shape’s boundary. To learn the position of the generators, we propose a novel loss function, dubbed VoroLoss, that minimizes the distance from groundtruth surface samples to the closest faces of the Voronoi diagram which does not require an explicit construction of the entire Voronoi diagram. A direct optimization of the Voroloss to obtain generators on the Thingi32 dataset demonstrates the geometric efficiency of our representation compared to axiomatic meshing algorithms and recent learning-based mesh representations. We further use VoroMesh in a learning-based mesh prediction task from input SDF grids on the ABC dataset, and show comparable performance to state-of-the-art methods while guaranteeing closed output surfaces free of self-intersections.
 				</div>
-				<div class="pub-conf"> International Conference on Computer Vision (ICCV), 2023</div>
+				<div class="pub-conf"> Proc. International Conference on Computer Vision (ICCV), 2023</div>
 
 			</div>
         </div>
@@ -63,12 +83,12 @@
         <div class="container">
 			<div class="zoomhover">
 			<a href="https://inria.hal.science/hal-04135266#">
-            <img class="pub-img" src="img/offset.jpg" alt="Publication 1 Image">
+            <img class="pub-img" src="img/offset.png" alt="Publication 1 Image">
 			</a>
 			</div>
 			<div>
 				<a class="pub-title" href="https://inria.hal.science/hal-04135266#"> Feature-Preserving Offset Mesh Generation from Topology-Adapted Octrees</a>
-				<div class="pub-authors">Daniel Zint, Nissim Maruani, Mael Rouxel-Labbé, Pierre Alliez</div> 
+				<div class="pub-authors">Daniel Zint,  <b>Nissim Maruani</b>, Mael Rouxel-Labbé, Pierre Alliez</div> 
 
 				<div class="pub-abstract">We introduce a reliable method to generate offset meshes from input triangle meshes or triangle soups. Our method proceeds in two steps. The first step performs a Dual Contouring method on the offset surface, operating on an adaptive octree that is refined in areas where the offset topology is complex. Our approach substantially reduces memory consumption and runtime compared to isosurfacing methods operating on uniform grids. The second step improves the output Dual Contouring mesh with an offset-aware remeshing algorithm to reduce the normal deviation between the mesh facets and the exact offset. This remeshing process reconstructs concave sharp features and approximates smooth shapes in convex areas up to a user-defined precision. We show the effectiveness and versatility of our method by applying it to a wide range of input meshes. We also benchmark our method on the entire Thingi10k dataset: watertight, 2-manifold offset meshes are obtained for 100% of the cases.</div>
 				<div class="pub-conf">Symposium on geometry processing (SGP), 2023</div>

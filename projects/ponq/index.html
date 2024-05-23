@@ -22,7 +22,7 @@
   <!-- <meta name="twitter:card" content="summary_large_image"> -->
   <!-- Keywords for your paper to be indexed by-->
   <meta name="keywords" content="PoNQ learning reconstruction">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
   <title>PoNQ</title>
@@ -183,11 +183,11 @@
 
 <section class="section">
   <div class="container is-max-desktop is-four-fifths">
-    <h2 class="title is-3">Overview: Learning-based 3D Reconstruction</h2>
+    <h2 class="title is-3">Application: Learning-based 3D Reconstruction from SDF grids</h2>
     <table class="table full-width">
       <!-- is-hidden-mobile  -->
       <tr>
-        <td class="nopadding"><model-viewer alt="mesh" src="static/meshes/sdf.glb" ar
+        <td class="nopadding hidable""><model-viewer alt="mesh" src="static/meshes/sdf.glb" ar
           camera-controls shadow-intensity="0"
           poster="static/meshes/sdf_poster.webp"></model-viewer></td>
         <td class="nopadding"><model-viewer alt="mesh" src="static/meshes/bunny_ponq.glb" ar shadow-intensity="1"
@@ -198,7 +198,7 @@
             poster="static/meshes/bunny_mc_poster.webp"></model-viewer></td>
   </tr>
   <tr>
-    <td>
+    <td class="hidable">
       <h2 class="subtitle has-text-centered nopadding">Input SDF</h2>
     </td>
     <td>
@@ -228,7 +228,7 @@
     <!-- Direct optim -->
     <section class="section">
       <div class="container is-max-desktop is-four-fifths">
-        <h2 class="title is-3">Open Surfaces</h2>
+        <h2 class="title is-3">Extension 1: Open Surfaces</h2>
         <table class="table full-width">
           <!-- is-hidden-mobile  -->
           <tr>
@@ -238,7 +238,7 @@
             <td class="nopadding"><model-viewer alt="mesh" src="static/meshes/tshirt.glb" ar shadow-intensity="1"
               exposure=".6" camera-controls camera-orbit="calc(env(window-scroll-y) * 500deg) 70deg 40m" 
               poster="static/meshes/tshirt_poster.webp"></model-viewer></td>
-            <td class="nopadding"><model-viewer alt="mesh" src="static/meshes/ceasar.glb" ar shadow-intensity="1"
+            <td class="nopadding hidable"><model-viewer alt="mesh" src="static/meshes/ceasar.glb" ar shadow-intensity="1"
               exposure=".6" camera-controls camera-orbit="calc(env(window-scroll-y) * 500deg) 70deg 40m" 
               poster="static/meshes/ceasar_poster.webp"></model-viewer></td>
           </tr>
@@ -255,7 +255,7 @@
 
     <section class="section">
       <div class="container is-max-desktop is-four-fifths">
-        <h2 class="title is-3">GPU-based Simplification</h2>
+        <h2 class="title is-3">Extension 2: GPU-based Simplification</h2>
 
 
         <!-- <table class="table">
@@ -273,13 +273,13 @@
             <td class="nopadding"><model-viewer alt="mesh" src="static/meshes/zombie_1.glb" ar shadow-intensity="1"
               exposure=".6" camera-controls camera-orbit="calc(env(window-scroll-y) * 500deg - 150deg) 70deg 40m" 
               poster="static/images/z_1.jpg"></model-viewer></td>
-            <td class="nopadding"><model-viewer alt="mesh" src="static/meshes/zombie_2.glb" ar shadow-intensity="1"
+            <td class="nopadding hidable"><model-viewer alt="mesh" src="static/meshes/zombie_2.glb" ar shadow-intensity="1"
             exposure=".6" camera-controls camera-orbit="calc(env(window-scroll-y) * 500deg - 150deg) 70deg 40m" 
             poster="static/images/z_2.jpg"></model-viewer></td>
             <td class="nopadding"><model-viewer alt="mesh" src="static/meshes/zombie_3.glb" ar shadow-intensity="1"
               exposure=".6" camera-controls camera-orbit="calc(env(window-scroll-y) * 500deg - 150deg) 70deg 40m" 
               poster="static/images/z_3.jpg"></model-viewer></td>
-            <td class="nopadding"><model-viewer alt="mesh" src="static/meshes/zombie_4.glb" ar shadow-intensity="1"
+            <td class="nopadding hidable"><model-viewer alt="mesh" src="static/meshes/zombie_4.glb" ar shadow-intensity="1"
               exposure=".6" camera-controls camera-orbit="calc(env(window-scroll-y) * 500deg - 150deg) 70deg 40m" 
               poster="static/images/z_4.jpg"></model-viewer></td>
             </tr>
@@ -287,13 +287,13 @@
                 <td>
                   <h2 class="subtitle has-text-centered nopadding">128<sup>3</sup></h2>
                 </td>
-                <td>
+                <td class="hidable">
                   <h2 class="subtitle has-text-centered nopadding">64<sup>3</sup></h2>
                 </td>
                 <td>
                   <h2 class="subtitle has-text-centered nopadding">32<sup>3</sup></h2>
                 </td>
-                <td>
+                <td class="hidable">
                   <h2 class="subtitle has-text-centered nopadding">16<sup>3</sup></h2>
                 </td>
               </tr>

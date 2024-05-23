@@ -9,11 +9,11 @@ model-viewer {
 }
 
 
-/* @media only screen and (min-width: 769) {
-  model-viewer {
-    height: 30vw;
+@media screen and (max-width: 769px) {
+  .hidable {
+    display: none;
   }
-} */
+}
 
 .full-width {
   width:100%;

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <!-- <meta name="description" content="DESCRIPTION META TAG"> -->
+  <meta property="og:title" content="ShapeShifter Project Page" />
+  <meta property="og:description" content="ShapeShifter Project Page" />
+  <meta property="og:url" content="URL OF THE WEBSITE" />
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/images/banner_mobile.png" />
+  <!-- <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="627" /> -->
+
+
+  <!-- <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG"> -->
+  <!-- <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG"> -->
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <!-- <meta name="twitter:image" content="static/images/your_twitter_banner_image.png"> -->
+  <!-- <meta name="twitter:card" content="summary_large_image"> -->
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="ShapeShifter learning diffusion">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>ShapeShifter</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+</head>
+
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">ShapeShifter: 3D Variations Using Multiscale and Sparse Point-Voxel
+              Diffusion
+            </h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://nissmar.github.io" target="_blank">Nissim Maruani</a><sup>1</sup>, </span>
+              <span class="author-block">
+                <a href="https://yifita.netlify.app" target="_blank">Yifan Wang</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://techmatt.github.io" target="_blank">Matthew Fisher</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://team.inria.fr/titane/pierre-alliez/" target="_blank">Pierre Alliez</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://pages.saclay.inria.fr/mathieu.desbrun/" target="_blank">Mathieu
+                  Desbrun</a><sup>1,3</sup>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Inria, <sup>2</sup>Adobe Research, <sup>3</sup>École polytechnique
+                <!-- <br>CVPR 2024</span> -->
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- <span class="link-block">
+                  <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Maruani_ShapeShifter_a_Neural_QEM-based_Mesh_Representation_CVPR_2024_paper.pdf"
+                    target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fa fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span> -->
+                <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2502.02187" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/nissmar/ShapeShifter" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <span class="link-block">
+                  <a href="https://drive.google.com/" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-database"></i>
+                    </span>
+                    <span>Data</span>
+                  </a>
+                </span>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Teaser Image -->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <picture>
+          <img src="static/images/shapeshifter-summary.svg" alt="MY ALT TEXT" width="600">
+        </picture>
+      </div>
+    </div>
+  </section>
+
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              This paper proposes a new 3D generative model that learns to synthesize shape variations based on a single
+              example. While generative methods for 3D objects have recently attracted much attention, current
+              techniques often lack geometric details and/or require long training times and large resources. Our
+              approach remedies these issues by combining sparse voxel grids and multiscale point, normal, and color
+              sampling within an encoder-free neural architecture that can be trained efficiently and in parallel. We
+              show that our resulting variations better capture the fine details of their original input and can capture
+              more general types of surfaces than previous SDF-based methods. Moreover, we offer interactive generation
+              of 3D shape variants, allowing more human control in the design loop if needed.
+            </p>
+          </div>
+          <!-- <video controls='true' width="1920" height="1080"> -->
+            <!-- <source src="./static/video/teaser.m4v" type="video/x-m4v" media="all"> -->
+            <!-- <source src="./static/video/teaser.mp4" type="video/mp4" media="all">
+          </video> -->
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the document</title>
+  </head>
+  <body>
+    <video width="320" height="240" controls autoplay>
+      <source src=”http://techslides.com/demos/sample-videos/small.ogv” type=video/ogg>
+      <source src="/build/videos/arcnet.io(7-sec).mp4" type=video/mp4>
+    </video>
+    <p><strong>Note:</strong> The autoplay attribute will not work on some mobile devices.</p>
+  </body>
+</html> -->
+
+  <section class="section">
+    <div class="container is-max-desktop is-four-fifths">
+      <h2 class="title is-3">Results</h2>
+      <table class="table full-width">
+        <!-- is-hidden-mobile  -->
+        <tr>
+          <td class="nopadding"><model-viewer alt="mesh" src="static/meshes/gt_canyon.glb" exposure="1.5" ar
+              camera-controls camera-orbit="0deg 20deg 15m" poster="static/meshes/gt_canyon.webp"></model-viewer></td>
+          <td class="nopadding"><model-viewer alt="mesh" src="static/meshes/sin3dm_canyon.glb" exposure="1.5" ar
+              camera-controls camera-orbit="0deg 20deg 15m" poster="static/meshes/sin3dm_canyon.webp"></model-viewer>
+          </td>
+          <td class="nopadding"><model-viewer alt="mesh" src="static/meshes/ours_canyon.glb" exposure="1.5" ar
+              camera-controls camera-orbit="0deg 20deg 15m" poster="static/meshes/ours_canyon.webp"></model-viewer></td>
+        </tr>
+        <tr>
+          <td class="hidable">
+            <h2 class="subtitle has-text-centered nopadding">Input Geometry</h2>
+          </td>
+          <td>
+            <h2 class="subtitle has-text-centered nopadding">Sin3DM</h2>
+          </td>
+
+          <td>
+            <h2 class="subtitle has-text-centered nopadding">ShapeShifter (ours)</h2>
+          </td>
+        </tr>
+      </table>
+
+      <div class="content has-text-justified">
+        <p>
+          TODO
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Direct optim -->
+  <section class="section">
+    <div class="container is-max-desktop is-four-fifths">
+      <h2 class="title is-3">Multiscale Diffusion</h2>
+      <div class="columns">
+        <div class="column is-7">
+          <picture>
+            <img src="static/images/overview2.svg" alt="MY ALT TEXT" width="1000">
+          </picture>
+        </div>
+        <div class="column is-5 is-flex is-align-items-center">
+          <div class="content has-text-justified">
+            <p>
+              <strong>3D shape representation.</strong> We operate on raw features: oriented point clouds (possibly
+              augmented with RGB
+              colors) encoded on sparse voxel grids for efficient computations.
+              <br><br>
+              <strong>Multiscale diffusion on sparse voxel grid.</strong> We start from
+              noise at the coarsest level, and obtain the 3D feature grid through reverse diffusion. Each
+              subsequent level uses the output of the previous level. Inactive voxels are first pruned, then upsampled
+              with a level-specific upsampler. The upsampled grid is subsequently noised and passed through
+              the diffusion model to obtain a clean version of the sparse feature grid. All levels are independent
+              and can thus be trained in parallel.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Learning ABC -->
+  <!-- <section class="section">
+    <div class="container is-max-desktop is-four-fifths">
+      <div class="container">
+      <h2 class="title is-3">Learning Pipeline</h2>
+     <img class="tabimg" src="static/images/CNN3.svg" alt="Image 1" style="width: 50%; height: 100%;">
+    </div>
+    </div>
+  </section> -->
+
+  <!--Acknowledgment citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">Acknowledgements</h2>
+      <div class="content has-text-justified">
+        <p>
+          This work was supported by 3IA Côte d'Azur (ANR-19-P3IA-0002).
+      </div>
+    </div>
+  </section>
+
+  <!--BibTex citation -->
+  <!-- <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section> -->
+  <!--End BibTex citation -->
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                target="_blank">Academic Project Page Template</a>.
+              You are free to borrow the of this website, we just ask that you link back to this page in the footer.
+              <br> This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Statcounter tracking code -->
+
+  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+  <!-- End of Statcounter Code -->
+
+</body>
+
+</html>

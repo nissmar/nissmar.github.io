@@ -25,9 +25,9 @@
 		<div>
 			<h1>Nissim Maruani</h1>
 			<p class="contact"> <a class="custom-link" href="mailto:nissim.maruani@inria.fr">Contact</a> | <a
-					class="custom-link" href="https://www.github.com/nissmar"> GitHub</a> | <a
-					class="custom-link" href="https://scholar.google.com/citations?user=ae3FZA0AAAAJ&hl=fr&authuser=1"> Scholar</a> | <a class="custom-link"
-					href="https://www.linkedin.com/in/nissim-maruani/"> LinkedIn</a> </p>
+					class="custom-link" href="https://www.github.com/nissmar"> GitHub</a> | <a class="custom-link"
+					href="https://scholar.google.com/citations?user=ae3FZA0AAAAJ&hl=fr&authuser=1"> Scholar</a> | <a
+					class="custom-link" href="https://www.linkedin.com/in/nissim-maruani/"> LinkedIn</a> </p>
 			<div class="bio">
 				<p>I am a third year PhD student at INRIA, under the supervision of <a class="custom-link"
 						href="https://team.inria.fr/titane/pierre-alliez/">Pierre Alliez</a> (<a class="custom-link"
@@ -48,23 +48,60 @@
 	<ul class="pub">
 		<div class="container">
 			<div class="zoomhover">
+				<a href="https://anttwo.github.io/milo/">
+					<img class="pub-img" src="img/milo.gif" alt="Publication 1 Image">
+				</a>
+			</div>
+			<div>
+				<a class="pub-title" href="https://anttwo.github.io/milo/"> MILo: Mesh-In-the-Loop Gaussian Splatting
+					for Detailed and Efficient Surface Reconstruction
+					Diffusion</a>
+				<div class="pub-authors"> Antoine Guédon, Diego Gomez, <b>Nissim Maruani</b>, Bingchen Gong, George
+					Drettakis, Maks Ovsjanikov </div>
+
+				<div class="pub-abstract">
+					Our method introduces a novel differentiable mesh extraction framework that operates during the
+					optimization of 3D Gaussian Splatting representations. At every training iteration, we
+					differentiably extract a mesh—including both vertex locations and connectivity—only from Gaussian
+					parameters. This enables gradient flow from the mesh to Gaussians, allowing us to promote
+					bidirectional consistency between volumetric (Gaussians) and surface (extracted mesh)
+					representations. This approach guides Gaussians toward configurations better suited for surface
+					reconstruction, resulting in higher quality meshes with significantly fewer vertices. Our framework
+					can be plugged into any Gaussian splatting representation, increasing performance while generating
+					an order of magnitude fewer mesh vertices. MILo makes the reconstructions more practical for
+					downstream applications like physics simulations and animation.
+				</div>
+				<div class="pub-conf">ACM Trans. Graph. (SIGGRAPH Asia - <u>Journal Track</u>), 2025</div>
+			</div>
+		</div>
+	</ul>
+	<ul class="pub">
+		<div class="container">
+			<div class="zoomhover">
 				<a href="https://nissmar.github.io/projects/shapeshifter">
 					<img class="pub-img" src="img/shapeshifter.gif" alt="Publication 1 Image">
 				</a>
 			</div>
 			<div>
-				<a class="pub-title" href="https://nissmar.github.io/projects/shapeshifter"> ShapeShifter: 3D Variations Using Multiscale and Sparse Point-Voxel
+				<a class="pub-title" href="https://nissmar.github.io/projects/shapeshifter"> ShapeShifter: 3D Variations
+					Using Multiscale and Sparse Point-Voxel
 					Diffusion</a>
-				<div class="pub-authors"> <b>Nissim Maruani</b>, Wang Yifan, Matthew Fisher, Pierre Alliez, Mathieu Desbrun </div>
+				<div class="pub-authors"> <b>Nissim Maruani</b>, Wang Yifan, Matthew Fisher, Pierre Alliez, Mathieu
+					Desbrun </div>
 
 				<div class="pub-abstract">
-					This paper proposes a new 3D generative model that learns to synthesize shape variations based on a single
+					This paper proposes a new 3D generative model that learns to synthesize shape variations based on a
+					single
 					example. While generative methods for 3D objects have recently attracted much attention, current
 					techniques often lack geometric details and/or require long training times and large resources. Our
-					approach remedies these issues by combining sparse voxel grids and multiscale point, normal, and color
-					sampling within an encoder-free neural architecture that can be trained efficiently and in parallel. We
-					show that our resulting variations better capture the fine details of their original input and can capture
-					more general types of surfaces than previous SDF-based methods. Moreover, we offer interactive generation
+					approach remedies these issues by combining sparse voxel grids and multiscale point, normal, and
+					color
+					sampling within an encoder-free neural architecture that can be trained efficiently and in parallel.
+					We
+					show that our resulting variations better capture the fine details of their original input and can
+					capture
+					more general types of surfaces than previous SDF-based methods. Moreover, we offer interactive
+					generation
 					of 3D shape variants, allowing more human control in the design loop if needed.
 				</div>
 				<div class="pub-conf"> Proc. Conference on Computer Vision and Patter Recognition (CVPR), 2025</div>

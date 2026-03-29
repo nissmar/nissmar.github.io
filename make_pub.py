@@ -1,13 +1,12 @@
-webpage = "https://arxiv.org/abs/2511.17454"
-img = "img/illustrators_depth_square.pdf"
-paper_name = "Illustrator’s Depth: Monocular Layer Index Prediction for Image Decomposition"
-authors = "Nissim Maruani, Peiying Zhang, Siddhartha Chaudhuri, Matthew Fisher, Nanxuan Zhao, Vladimir G. Kim, Pierre Alliez, Mathieu Desbrun, Wang Yifan"
+webpage = ""
+img = "img/supersdf_trailer.png"
+paper_name = "Learning-based Sparse Signed Distance Field Super-Resolution"
+authors = "Sagar Panwar<sup>*</sup>, Nissim Maruani<sup>*</sup>, Céline Loscos, Mathieu Desbrun, Pierre Alliez"
 authors = authors.replace("Nissim Maruani", "<b>Nissim Maruani</b>")
 
-conference = "Arxiv, 2025"
+conference = "ACM Trans. Graph. (SIGGRAPH), 2026"
 
-abstract = "We introduce Illustrator’s Depth, a novel definition of depth that addresses a key challenge in digital content creation: decomposing flat images into editable, ordered layers. Inspired by an artist’s compositional process, illustrator’s depth infers a layer index for each pixel, forming an interpretable image decomposition through a discrete, globally consistent ordering of elements optimized for editability. We also propose and train a neural network using a curated dataset of layered vector graphics to predict layering directly from raster inputs. Our layer index inference unlocks a range of powerful downstream applications. In particular, it significantly outperforms state-of-the-art baselines for image vectorization while also enabling high-fidelity text-to-vector-graphics generation, automatic 3D relief generation from 2D images, and intuitive depth-aware editing. By reframing depth from a physical quantity to a creative abstraction, illustrator's depth prediction offers a new foundation for editable image decomposition."
-
+abstract = "Signed Distance Fields (SDFs) are a powerful volumetric representation for 3D geometry. Recent advances in surface generation from SDFs increasingly rely on learnable surface representations and direct supervision on meshes. In this work, we challenge this trend and show that high-quality surface reconstruction can instead be achieved by learning to refine the volumetric signal itself. We present SuperSDF, a learning-based approach for sparse SDF super-resolution that operates directly in SDF space, without introducing any auxiliary surface representation or mesh-level supervision. Using a sparse voxel neural network restricted to a narrow band near the surface, our method predicts high-resolution signed-distance values from coarse inputs in a scalable and resolution-agnostic manner. Standard isosurface extraction algorithms can then process the resulting super-resolved SDFs, yielding accurate and detailed surface meshes. Our results demonstrate that learning-based SDF upsampling alone is sufficient to recover fine geometric details that are missed by classical interpolation and prior reconstruction methods. Compared to state-of-the-art ML approaches, our method produces higher-fidelity surfaces at a fraction of the computational cost and scales to volumetric resolutions previously out of reach."
 # DO NOT TOUCH
 text = f"""
         <ul class="pub">

@@ -1,13 +1,14 @@
-webpage = ""
-img = "img/supersdf_trailer.png"
-paper_name = "Learning-based Sparse Signed Distance Field Super-Resolution"
-authors = "Sagar Panwar<sup>*</sup>, Nissim Maruani<sup>*</sup>, Céline Loscos, Mathieu Desbrun, Pierre Alliez"
-authors = authors.replace("Nissim Maruani", "<b>Nissim Maruani</b>")
+webpage = "https://diego1401.github.io/BlobsToSpokesWebsite/"
+img = "img/blobs_spokes.jpg"
+paper_name = "From Blobs to Spokes: High-Fidelity Surface Reconstruction via Oriented Gaussians"
+authors = "Diego Gomez<sup>*</sup>, Antoine Guédon<sup>*</sup>, Nissim Maruani, Bingchen Gong, Maks Ovsjanikov"
 
-conference = "ACM Trans. Graph. (SIGGRAPH), 2026"
+conference = "ArXiv, 2026"
 
-abstract = "Signed Distance Fields (SDFs) are a powerful volumetric representation for 3D geometry. Recent advances in surface generation from SDFs increasingly rely on learnable surface representations and direct supervision on meshes. In this work, we challenge this trend and show that high-quality surface reconstruction can instead be achieved by learning to refine the volumetric signal itself. We present SuperSDF, a learning-based approach for sparse SDF super-resolution that operates directly in SDF space, without introducing any auxiliary surface representation or mesh-level supervision. Using a sparse voxel neural network restricted to a narrow band near the surface, our method predicts high-resolution signed-distance values from coarse inputs in a scalable and resolution-agnostic manner. Standard isosurface extraction algorithms can then process the resulting super-resolved SDFs, yielding accurate and detailed surface meshes. Our results demonstrate that learning-based SDF upsampling alone is sufficient to recover fine geometric details that are missed by classical interpolation and prior reconstruction methods. Compared to state-of-the-art ML approaches, our method produces higher-fidelity surfaces at a fraction of the computational cost and scales to volumetric resolutions previously out of reach."
+abstract = "3D Gaussian Splatting (3DGS) has revolutionized fast novel view synthesis, yet its opacity-based formulation makes surface extraction fundamentally difficult. Unlike implicit methods built on Signed Distance Fields or occupancy, 3DGS lacks a global geometric field, forcing existing approaches to resort to heuristics such as TSDF fusion of blended depth maps. Inspired by the Objects as Volumes framework, we derive a principled occupancy field for Gaussian Splatting and show how it can be used to extract highly accurate watertight meshes of complex scenes. Our key contribution is to introduce a learnable oriented normal at each Gaussian element and to define an adapted attenuation formulation, which leads to closed-form expressions for both the normal and occupancy fields at arbitrary locations in space. We further introduce a novel consistency loss and a dedicated densification strategy to enforce Gaussians to wrap the entire surface by closing geometric holes, ensuring a complete shell of oriented primitives. We modify the differentiable rasterizer to output depth as an isosurface of our continuous model, and introduce Primal Adaptive Meshing for Region-of-Interest meshing at arbitrary resolution. We additionally expose fundamental biases in standard surface evaluation protocols and propose two more rigorous alternatives. Overall, our method Gaussian Wrapping sets a new state-of-the-art on DTU and Tanks and Temples, producing complete, watertight meshes at a fraction of the size of concurrent work-recovering thin structures such as the notoriously elusive bicycle spokes."
+
 # DO NOT TOUCH
+authors = authors.replace("Nissim Maruani", "<b>Nissim Maruani</b>")
 text = f"""
         <ul class="pub">
                 <div class="container">

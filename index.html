@@ -62,6 +62,45 @@
 	<ul class="pub">
 		<div class="container">
 			<div class="zoomhover">
+				<a href="https://diego1401.github.io/BlobsToSpokesWebsite/">
+					<img class="pub-img" src="img/blobs_spokes.jpg" alt="Publication 1 Image">
+				</a>
+			</div>
+			<div>
+				<a class="pub-title" href="https://diego1401.github.io/BlobsToSpokesWebsite/"> From Blobs to Spokes:
+					High-Fidelity Surface Reconstruction via Oriented Gaussians</a>
+				<div class="pub-authors"> Diego Gomez<sup>*</sup>, Antoine Guédon<sup>*</sup>, <b>Nissim Maruani</b>,
+					Bingchen Gong, Maks Ovsjanikov </div>
+
+				<div class="pub-abstract">
+					<!-- 3D Gaussian Splatting (3DGS) has revolutionized fast novel view synthesis, yet its opacity-based
+					formulation makes surface extraction fundamentally difficult.  -->
+					Unlike implicit methods built on
+					Signed Distance Fields or occupancy, 3DGS lacks a global geometric field, forcing existing
+					approaches to resort to heuristics such as TSDF fusion of blended depth maps. Inspired by the
+					Objects as Volumes framework, we derive a principled occupancy field for Gaussian Splatting and show
+					how it can be used to extract highly accurate watertight meshes of complex scenes. Our key
+					contribution is to introduce a learnable oriented normal at each Gaussian element and to define an
+					adapted attenuation formulation, which leads to closed-form expressions for both the normal and
+					occupancy fields at arbitrary locations in space. We further introduce a novel consistency loss and
+					a dedicated densification strategy to enforce Gaussians to wrap the entire surface by closing
+					geometric holes, ensuring a complete shell of oriented primitives. We modify the differentiable
+					rasterizer to output depth as an isosurface of our continuous model, and introduce Primal Adaptive
+					Meshing for Region-of-Interest meshing at arbitrary resolution. Overall,
+					our method Gaussian Wrapping sets a new state-of-the-art on DTU and Tanks and Temples, producing
+					complete, watertight meshes at a fraction of the size of concurrent work-recovering thin structures
+					such as the notoriously elusive bicycle spokes.
+				</div>
+				<div class="pub-conf">ArXiv, 2026</div>
+			</div>
+		</div>
+	</ul>
+	<ul class="pub-line"></ul>
+
+
+	<ul class="pub">
+		<div class="container">
+			<div class="zoomhover">
 				<a href="">
 					<img class="pub-img" src="img/supersdf_trailer.png" alt="Publication 1 Image">
 				</a>
@@ -333,7 +372,8 @@
 
 	<h2>Reviewer</h2>
 	<ul>
-		<li> CVPR 2026, Computers & Graphics 2026, EUROGRAPHICS 2026, BMVC 2025, IJCV 2025, SIGGRAPH 2025, BMVC 2024,
+		<li> ECCV 2026, CVPR 2026, Computers & Graphics 2026, EUROGRAPHICS 2026, BMVC 2025, IJCV 2025, SIGGRAPH 2025,
+			BMVC 2024,
 			SIGGRAPH ASIA 2024,
 			SIGGRAPH 2024, BMVC 2023</li>
 	</ul>
